@@ -1,6 +1,6 @@
 <?php
 
-$html=  file_get_contents("View/login.html");
-echo $html;
+$file=  file_get_contents('login.html',true);
+echo $file;
 
 ?>

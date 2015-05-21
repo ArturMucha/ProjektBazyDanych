@@ -13,19 +13,18 @@ if (isset($_POST['login'])) {
 	$linia= trim($linia);
 	$linia1= trim($linia1);
 
-	if( $login == $linia && $haslo == $linia1)
+        if( $login == $linia && $haslo == $linia1)
 	{
             header('Location:Gui.html');
-		 
+             
 		 
 	}
 	else{
-	    header('Location:Gui.php');
-		
+            
+	    header('Location:../index.php');
+            
 	}
 }
-
-
 
 
 
