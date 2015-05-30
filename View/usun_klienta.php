@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta charset="utf-8"/>
 	<title>Firma ubezpieczeniowa </title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -128,85 +129,24 @@
 <body>
 
 
-	<div id="main" >
-		<div id="logo"> <h2>System informatyczny dla firmy ubezpieczeniowej</h2></div>	
-	<nav id="menu">
+<form action="obsluga_klienta.php" method="post">
 
-        <ul class="parent-menu">
+  <div>
+      <li>
+  PESEL osoby do usunięcia:<br />
+  
+  <input name="u_pesel_klienta" value="" /><br /><br />
+      </li>
+ 
+  <input type="submit" value="Usuń" name="submit_kusun" />
+  <input type="submit" value="Wróć" name="submit_kwroc" />
+ 
 
-            <li><a href="#">Agenci</a>
+  </div>
 
-                <ul>
+  </form>
 
-                    <li><a href="#">Dodaj Agenta</a></li>
-
-                    <li><a href="#">Usuń Agenta</a></li>
-
-
-                    <li><a href="#">Wyślij na szkolenie</a></li>
-                    
-
-                                  </ul>
-
-                      <li><a href="#">Klienci</a>
-						<ul>
-						
-					<li><a href="http://localhost/ProjektBazyDanych/View/dodaj_klienta.php">Dodaj Klienta</a></li>
-
-                    <li><a href="http://localhost/ProjektBazyDanych/View/usun_klienta.php">Usuń Klienta</a></li>
-
-                    <li><a href="http://localhost/ProjektBazyDanych/View/edytuj_klienta.php">Edytuj Klienta</a></li>
-
-                    <li><a href="http://localhost/ProjektBazyDanych/View/ustal_spotkanie.php">Ustal Spotkanie</a></li>
-						
-						</ul>
-						
-				 <li><a href="#">Produkty</a>
-						<ul>
-						
-					<li><a href="#">Dodaj Produkt</a></li>
-
-                    <li><a href="#">Usuń Produkt</a></li>
-
-                    <li><a href="#">Zmień Specyfikację </a></li>
-
-                   
-						
-						</ul>
-					
-				 <li><a href="#">Konto</a>
-						<ul>
-						
-					<li><a href="#">Dodaj Konto</a></li>
-
-                    <li><a href="#">Zaloguj się </a></li>
-
-                    <li><a href="#">Edytuj Dane</a></li>
-
-            
-						
-						</ul>
-						
-					 <li><a href="#">Szkolenia</a>
-						<ul>
-						
-					<li><a href="#">Dodaj Szkolenie</a></li>
-
-                    <li><a href="#">Usuń Szkolenie</a></li>
-
-                    <li><a href="#">Edycja Szkolenia</a></li>
-
-                    <li><a href="#">Kontola frekwencji</a></li>
-						
-					</ul>
-				
-        </ul>
-
-    </nav>
-
-        </div>		
-
-</body>
+ </body>
 
 
 </html>

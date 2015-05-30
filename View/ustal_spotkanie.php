@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta charset="utf-8"/>
 	<title>Firma ubezpieczeniowa </title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -118,6 +119,11 @@
                 background-color:#2e2e2e;
 
             }
+            
+            #popo{
+               padding-left: 1000px;
+            }
+
 	</style>
 	
 
@@ -127,86 +133,33 @@
 
 <body>
 
+                <form action="obsluga_klienta.php" method="post">
 
-	<div id="main" >
-		<div id="logo"> <h2>System informatyczny dla firmy ubezpieczeniowej</h2></div>	
-	<nav id="menu">
+  Data spotkania:<br />
+  
+  <input name="data_spotkania" value="" /><br /> 
 
-        <ul class="parent-menu">
+  Uwagi:<br />
 
-            <li><a href="#">Agenci</a>
+  <input name="uwagi" value="" /><br />
 
-                <ul>
+  PESEL klienta:<br />
 
-                    <li><a href="#">Dodaj Agenta</a></li>
+  <input name="pesel_klienta" value="" /><br />
 
-                    <li><a href="#">Usuń Agenta</a></li>
+  ID agenta:<br />
 
+  <input name="id_agenta" value="" /><br />
 
-                    <li><a href="#">Wyślij na szkolenie</a></li>
-                    
+  ID regionu:<br />
 
-                                  </ul>
+  <input name="id_regionu" value="" /><br /><br />
+ 
+  <input type="submit" value="Dodaj" name="submit_uspot" />
+  <input type="submit" value="Wróć" name="submit_kwroc" />
 
-                      <li><a href="#">Klienci</a>
-						<ul>
-						
-					<li><a href="http://localhost/ProjektBazyDanych/View/dodaj_klienta.php">Dodaj Klienta</a></li>
-
-                    <li><a href="http://localhost/ProjektBazyDanych/View/usun_klienta.php">Usuń Klienta</a></li>
-
-                    <li><a href="http://localhost/ProjektBazyDanych/View/edytuj_klienta.php">Edytuj Klienta</a></li>
-
-                    <li><a href="http://localhost/ProjektBazyDanych/View/ustal_spotkanie.php">Ustal Spotkanie</a></li>
-						
-						</ul>
-						
-				 <li><a href="#">Produkty</a>
-						<ul>
-						
-					<li><a href="#">Dodaj Produkt</a></li>
-
-                    <li><a href="#">Usuń Produkt</a></li>
-
-                    <li><a href="#">Zmień Specyfikację </a></li>
-
-                   
-						
-						</ul>
-					
-				 <li><a href="#">Konto</a>
-						<ul>
-						
-					<li><a href="#">Dodaj Konto</a></li>
-
-                    <li><a href="#">Zaloguj się </a></li>
-
-                    <li><a href="#">Edytuj Dane</a></li>
-
-            
-						
-						</ul>
-						
-					 <li><a href="#">Szkolenia</a>
-						<ul>
-						
-					<li><a href="#">Dodaj Szkolenie</a></li>
-
-                    <li><a href="#">Usuń Szkolenie</a></li>
-
-                    <li><a href="#">Edycja Szkolenia</a></li>
-
-                    <li><a href="#">Kontola frekwencji</a></li>
-						
-					</ul>
-				
-        </ul>
-
-    </nav>
-
-        </div>		
-
-</body>
+  </form> 
+ </body>
 
 
 </html>
