@@ -1,6 +1,6 @@
 <?php
         $connect = mysql_connect("localhost",'nazwa_użytkownika','hasło');
-        mysql_select_db("nazwabazy.sql");
+        mysql_select_db("nazwabazy");
 
     if (isset($_POST['submit_kdodaj'])){     
                 $pesel_klienta = $_POST['pesel_klienta'];
