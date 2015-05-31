@@ -52,38 +52,30 @@
 <body>
 
 
-<form action="obsluga_klienta.php" method="post">
+<form action="produkty.php" method="post">
 
   <div>
       <li>
-  PESEL:<br />
+  Id_produktu:<br />
   
-  <input name="pesel_klienta" value="" /><br />
+  <input name="id_produktu" value="" /><br />
       </li>
-  Imię:<br />
+  Nazwa:<br />
 
-  <input name="imie_klienta" value="" /><br />
+  <input name="nazwa_produktu" value="" /><br />
 
-  Nazwisko:<br />
+  Dlugosc umowy (w miesiacach):<br />
 
-  <input name="nazwisko_klienta" value="" /><br />
+  <input name="dlugosc_trwania_umowy" value="" /><br />
 
-  Adres:<br />
+  Skladka minimalna (w zł):<br />
 
-  <input name="adres_klienta" value="" /><br />
+  <input name="wysokosc_skladki" value="" /><br />
   
-  Miejscowość:<br />
-
-  <input name="miejscowosc_klienta" value="" /><br />
   
-  *Notatka:<br />
-
-  <input name="notatka_klienta" value="" /><br /><br />
-  
- *pola nieobowiązkowe<br /><br />
  
-  <input type="submit" value="Dodaj" name="submit_kdodaj" />
-  <input type="submit" value="Wróć" name="submit_kwroc" />
+  <input type="submit" value="Dodaj" name="submit_pdodaj" />
+  <input type="submit" value="Wróć" name="submit_pwroc" />
  
 
   </div>
