@@ -71,7 +71,7 @@
        
              #pola{
             float:left;
-         width : 40%;  
+           width : 40%; 
         }
 	</style>
 	
@@ -88,57 +88,59 @@
 	<nav id="menu">
 
         <ul class="parent-menu">
-                   <li><a href="http://localhost/ProjektBazyDanych/View/dodaj_klienta.php">Dodaj Klienta</a></li>
+                   <li><a href="http://localhost/ProjektBazyDanych/View/dodaj_produkt.php">Dodaj Produkt</a></li>
 
-                    <li><a href="http://localhost/ProjektBazyDanych/View/usun_klienta.php">Usuń Klienta</a></li>
+                    <li><a href="http://localhost/ProjektBazyDanych/View/usun_produkt.php">Usuń Produkt</a></li>
 
-                   <li><a href="http://localhost/ProjektBazyDanych/View/edytuj_klienta.php">Edytuj Klienta</a></li>
-
-                    <li><a href="http://localhost/ProjektBazyDanych/View/ustal_spotkanie.php">Ustal Spotkanie</a></li>
+                    <li><a href="http://localhost/ProjektBazyDanych/View/zmien.php">Zmień Specyfikację </a></li>
         </ul>
 
     </nav>
                 <center>       <div id="pola" >
-
-            <form action="obsluga_klienta.php" method="post" text-align: center>
+<form action="produkty.php" method="post">
 
   <div>
-      <li>
-          PESEL osoby do edycji:<br />
+           
+ Id produktu do zmiany:<br />
   
-<input name="pesel_klienta" value="" /><br /></br>
-Wprowadź zmienione dane: </br></br>
-  PESEL:<br />
+  <input name="id2" value="" /><br />
+        Wprowadź zmienione dane: </br></br>   
+          
+ Id_produktu:<br />
   
-  <input name="pesel_klienta2" value="" /><br /> 
+  <input name="id_produktu" value="" /><br />
+      
+  Nazwa:<br />
 
-  Imię:<br />
+  <input name="nazwa_produktu" value="" /><br />
+Przedmiot umowy:<br />
 
-  <input name="imie_klienta" value="" /><br />
+  <input name="dlugosc_trwania_umowy" value="" /><br />
+  Dlugosc umowy (w miesiacach):<br />
 
-  Nazwisko:<br />
+  <input name="dlugosc_trwania_umowy" value="" /><br />
 
-  <input name="nazwisko_klienta" value="" /><br />
+  Skladka minimalna (w zł):<br />
 
-  Adres:<br />
+  <input name="wysokosc_skladki_min" value="" /><br />
+  Skladka maksymalna (w zł):<br />
 
-  <input name="adres_klienta" value="" /><br />
+  <input name="wysokosc_skladki_maks" value="" /><br />
+  Skladka obecna (w zł):<br />
 
-  Miejscowość:<br />
-
-  <input name="miejscowosc_klienta" value="" /><br />
-
-  *Notatka:<br />
-
-  <input name="notatka_klienta" value="" /><br /><br />
-
- *pola nieobowiązkowe<br /><br />
+  <input name="wysokosc_skladki" value="" /><br />
+  </br></br>
  
-  <input type="submit" value="Edytuj" name="submit_kedytuj" />
-  <input type="submit" value="Wróć" name="submit_kwroc" /><center/>
+  <input type="submit" value="Dodaj" name="submit_pdodaj" />
+  <input type="submit" value="Wróć" name="submit_pwroc" />
+ 
+                                       
+  </div>
+  </div>
+                </center>
+        </div>	
 
-  </form> 
- </body>
+</body>
 
 
 </html>

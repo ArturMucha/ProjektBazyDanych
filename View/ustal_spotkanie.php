@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta charset="utf-8"/>
 	<title>Firma ubezpieczeniowa </title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -21,6 +20,7 @@
 	  text-align:center;
 	  padding:3px;
         }
+       
             p, ul, li, div, nav
         {
 
@@ -39,6 +39,7 @@
             overflow: auto;
             position:relative;
             z-index:2;
+            float :left;
         }
 
 
@@ -47,6 +48,7 @@
             min-width:200px;
             min-height: 550px;
             float:left;
+            width : 40%; 
         }
 
 
@@ -66,64 +68,11 @@
         }
 
 
-            #menu ul li a:hover
-            {
-                background-color:#007ee9;
-            }
-            #menu ul li:hover > ul {
-
-                left: 200px;
-
-                -webkit-transition: left 200ms ease-in;
-
-                -moz-transition: left 200ms ease-in;
-
-                -ms-transition: left 200ms ease-in;
-
-                transition: left 200ms ease-in;
-
-            }
-
-
-            #menu ul li > ul {
-
-                position: absolute;
-
-                background-color: #333;
-
-                top: 0;
-
-                left: -200px;
-
-                min-width: 200px;
-
-                z-index: -1;
-
-                height: 100%;
-
-                -webkit-transition: left 200ms ease-in;
-
-                -moz-transition: left 200ms ease-in;
-
-                -ms-transition: left 200ms ease-in;
-
-                transition: left 200ms ease-in;
-
-            }
-
-
-            #menu ul li > ul li a:hover
-
-            {
-
-                background-color:#2e2e2e;
-
-            }
-            
-            #popo{
-               padding-left: 1000px;
-            }
-
+       
+             #pola{
+            float:left;
+         width : 40%;  
+        }
 	</style>
 	
 
@@ -132,14 +81,29 @@
 
 
 <body>
-    
-        	<div id="main" >
+
+
+	<div id="main" >
 		<div id="logo"> <h2>System informatyczny dla firmy ubezpieczeniowej</h2></div>	
-                <nav id="menu"><br />
+	<nav id="menu">
 
-                    <center><form action="obsluga_klienta.php" method="post">
+        <ul class="parent-menu">
+                   <li><a href="http://localhost/ProjektBazyDanych/View/dodaj_klienta.php">Dodaj Klienta</a></li>
 
-  Data spotkania:<br />
+                    <li><a href="http://localhost/ProjektBazyDanych/View/usun_klienta.php">Usuń Klienta</a></li>
+
+                   <li><a href="http://localhost/ProjektBazyDanych/View/edytuj_klienta.php">Edytuj Klienta</a></li>
+
+                    <li><a href="http://localhost/ProjektBazyDanych/View/ustal_spotkanie.php">Ustal Spotkanie</a></li>
+        </ul>
+
+    </nav>
+                <center>       <div id="pola" >
+
+            <form action="obsluga_klienta.php" method="post" text-align: center>
+
+  <div>
+      <li>  Data spotkania:<br />
   
   <input name="data_spotkania" value="" /><br /> 
 

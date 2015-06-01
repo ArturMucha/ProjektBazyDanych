@@ -5,9 +5,13 @@
     if (isset($_POST['submit_pdodaj'])){    
                 $id_produktu = $_POST['id_produktu'];
                 $nazwa_produktu = $_POST['nazwa_produktu'];
+                $przedmiot_umowy=$_post['przedmiot_umowy'];
+                
                 $dlugosc_trwania_umowy = $_POST['dlugosc_trwania_umowy'];
+                  $wysokosc_skladki_min= $_POST['wysokosc_skladki_min'];
+                  $wysokosc_skladki_maks= $_POST['wysokosc_skladki_maks'];
                   $wysokosc_skladki= $_POST['wysokosc_skladki'];
-                $zapytanie = "INSERT INTO KLIENT (id_produktu,nazwa_produktu,dlugosc_trwania_umowy) VALUES('$id_produktu', '$nazwa_produktu', '$dlugosc_trwania_umowy', '$wysokosc_skladki')";
+                $zapytanie = "INSERT INTO PRODUKT (id_produktu,nazwa_produktu,przedmiot_umowy,dlugosc_trwania_umowy,wysokosc_skladki_min,wysokosc_skladki_maks,wysokosc_skladki) VALUES('$id_produktu', '$nazwa_produktu','$przedmiot_umowy', '$dlugosc_trwania_umowy', '$wysokosc_skladki_min','$wysokosc_skladki_maks','$wysokosc_skladki')";
                 $idzapytania = mysql_query($zapytanie);
                 header("Location: http://localhost/ProjektBazyDanych/View/dodaj_produkt.php");
         }
@@ -17,10 +21,22 @@
         
     
     if (isset($_POST['submit_pusun'])){
-                $id1_klienta = $_POST['id1_klienta'];
-                $zapytanie = "DELETE FROM KLIENT WHERE id_produktu= '$id1_klienta'";
+                $id1_produktu = $_POST['id1_produktu'];
+                $zapytanie = "DELETE FROM PRODUKT WHERE id_produktu= '$id1_produktu'";
                 $idzapytania = mysql_query($zapytanie);
                 header("Location: http://localhost/ProjektBazyDanych/View/usun_produkt.php");
+        }   
+          if (isset($_POST['submit_pzmien'])){
+                $id_produktu = $_POST['id_produktu'];
+                $id2 = $_POST['id2'];
+                $nazwa_produktu = $_POST['nazwa_produktu'];
+                $przedmiot_umowy = $_POST['przedmiot_umowy'];
+                $dlugosc_trwania_umowy = $_POST['dlugosc_trwania_umowy'];
+                $wysokosc_skladki_min = $_POST['wysokosc_skladki_min'];
+                  $wysokosc_skladki_maks= $_POST['wysokosc_skladki_maks'];
+                  $wysokosc_skladki= $_POST['wysokosc_skladki'];
+                $result = mysql_query("UPDATE produkt SET id_produktu = '$id2',nazwa_produktu = '$nazwa_produktu', Przedmiot_Umowy = '$przedmiot_umowy', dlugosc_trwania_umowy = '$dlugosc_trwania_umowy', wysokosc_skladki_min = '$wysokosc_skladki_min', wysokosc_skladki_maks = '$wysokosc_skladki_maks', wysokosc_skladki = '$wysokosc_skladki' WHERE id_produktu='$id_produktu'");
+                header("Location: http://localhost/ProjektBazyDanych/View/zmien.php");
         }   
      
 
