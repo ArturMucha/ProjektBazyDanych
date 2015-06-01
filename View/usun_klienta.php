@@ -128,7 +128,9 @@
 
 <body>
 
-
+    	<div id="main" >
+		<div id="logo"> <h2>System informatyczny dla firmy ubezpieczeniowej</h2></div>	
+                <center><nav id="menu"><br />
 <form action="obsluga_klienta.php" method="post">
 
   <div>
@@ -139,7 +141,7 @@
       </li>
  
   <input type="submit" value="Usuń" name="submit_kusun" />
-  <input type="submit" value="Wróć" name="submit_kwroc" />
+  <input type="submit" value="Wróć" name="submit_kwroc" /><center/>
  
 
   </div>

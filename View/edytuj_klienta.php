@@ -133,7 +133,11 @@
 
 <body>
 
-                <form action="obsluga_klienta.php" method="post">
+        	<div id="main" >
+		<div id="logo"> <h2>System informatyczny dla firmy ubezpieczeniowej</h2></div>	
+                <nav id="menu"><br />
+    
+                    <center><form action="obsluga_klienta.php" method="post">
 
 PESEL osoby do edycji:<br />
   
@@ -166,7 +170,7 @@ Wprowadź zmienione dane: </br></br>
  *pola nieobowiązkowe<br /><br />
  
   <input type="submit" value="Edytuj" name="submit_kedytuj" />
-  <input type="submit" value="Wróć" name="submit_kwroc" />
+  <input type="submit" value="Wróć" name="submit_kwroc" /><center/>
 
   </form> 
  </body>

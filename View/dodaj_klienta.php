@@ -127,9 +127,14 @@
 
 
 <body>
+    
+    	<div id="main" >
+		<div id="logo"> <h2>System informatyczny dla firmy ubezpieczeniowej</h2></div>	
+	<nav id="menu"><br />
 
 
-<form action="obsluga_klienta.php" method="post">
+
+            <center><form action="obsluga_klienta.php" method="post" text-align: center>
 
   <div>
       <li>
@@ -160,7 +165,7 @@
  *pola nieobowiązkowe<br /><br />
  
   <input type="submit" value="Dodaj" name="submit_kdodaj" />
-  <input type="submit" value="Wróć" name="submit_kwroc" />
+  <input type="submit" value="Wróć" name="submit_kwroc" /><center/>
  
 
   </div>

@@ -119,11 +119,6 @@
                 background-color:#2e2e2e;
 
             }
-            
-            #popo{
-               padding-left: 1000px;
-            }
-
 	</style>
 	
 
@@ -133,37 +128,43 @@
 
 <body>
     
-        	<div id="main" >
+    	<div id="main" >
 		<div id="logo"> <h2>System informatyczny dla firmy ubezpieczeniowej</h2></div>	
-                <nav id="menu"><br />
+	<nav id="menu"><br />
 
-                    <center><form action="obsluga_klienta.php" method="post">
+  </div>
 
-  Data spotkania:<br />
-  
-  <input name="data_spotkania" value="" /><br /> 
+  </form>
 
-  Uwagi:<br />
-
-  <input name="uwagi" value="" /><br />
-
-  PESEL klienta:<br />
-
-  <input name="pesel_klienta" value="" /><br />
-
-  ID agenta:<br />
-
-  <input name="id_agenta" value="" /><br />
-
-  ID regionu:<br />
-
-  <input name="id_regionu" value="" /><br /><br />
- 
-  <input type="submit" value="Dodaj" name="submit_uspot" />
-  <input type="submit" value="Wróć" name="submit_kwroc" /><center/>
-
-  </form> 
  </body>
 
 
 </html>
+<?php
+
+$username = "root";
+$password = "root";
+$hostname = "localhost"; 
+
+//connection to the database
+$dbhandle = mysql_connect($hostname, $username, $password)
+  or die("Unable to connect to MySQL");
+//echo "Connected to MySQL<br>";
+//select a database to work with
+$selected = mysql_select_db("sys",$dbhandle)
+  or die("Could not select examples");
+
+            $result = mysql_query("SELECT * FROM klient");
+
+            echo "<center><font size='4' color='white'><b>Wszyscy Klienci:</font>";
+            echo "<br /><br />";
+           // echo "<font color='white'><TR><TD>Pesel</TD><TD>Imię</TD><TD>Nazwisko</TD><TD>Adres</TD><TD>Miejscowość</TD><TD>Notatka</TD></TR></font>";
+            while ($row = mysql_fetch_array($result)) {
+    echo "<font width='50%'><table border='1' bgcolor='white'><TR><TD width='100'>" . $row["Pesel_Klienta"] ."</TD><TD width='100'> ".$row["Imie"]. "</TD><TD width='100'>" . $row["Nazwisko"]."</TD><TD width='100'>". $row["Adres"]."</TD><TD width='100'>". $row["Miejscowosc"]."</TD><TD width='100'>". $row["Notatka"] . "</TD></TR></font></table>";
+    echo "<br />";
+
+            }
+            echo "</b></center>";
+           echo '<center><form action="obsluga_klienta.php" method="post"><input type="submit" value="Wróć" name="submit_kwroc" /></form></center>';
+                  mysql_close($dbhandle);
+?>
