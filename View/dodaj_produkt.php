@@ -111,7 +111,7 @@
   <input name="nazwa_produktu" value="" /><br />
 Przedmiot umowy:<br />
 
-  <input name="dlugosc_trwania_umowy" value="" /><br />
+  <input name="przedmiot_umowy" value="" /><br />
   Dlugosc umowy (w miesiacach):<br />
 
   <input name="dlugosc_trwania_umowy" value="" /><br />
