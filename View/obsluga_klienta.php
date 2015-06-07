@@ -9,7 +9,7 @@ $dbhandle = mysql_connect($hostname, $username, $password)
   or die("Unable to connect to MySQL");
 echo "Connected to MySQL<br>";
 //select a database to work with
-$selected = mysql_select_db("sys",$dbhandle)
+$selected = mysql_select_db("test",$dbhandle)
   or die("Could not select examples");
 
     if (isset($_POST['submit_kdodaj'])){     
