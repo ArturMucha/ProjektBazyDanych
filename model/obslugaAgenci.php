@@ -15,7 +15,7 @@ class obslugaAgenci {
     {
     $connection = @mysql_connect('localhost', 'root', 'root')
     or die('Brak połączenia z serwerem MySQL');
-    $db = @mysql_select_db('AGENT', $connection)
+    $db = @mysql_select_db('sql', $connection)
     or die('Nie mogę połączyć się z bazą danych');
     
     // dodajemy rekord do bazy
